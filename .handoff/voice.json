@@ -1,0 +1,12 @@
+{
+  "provider": "ElevenLabs",
+  "voiceName": "Halloween Velvet C selected",
+  "voiceId": "FNr9JM4AKsLQH8gw9NB3",
+  "model": "eleven_multilingual_v2",
+  "designModel": null,
+  "fictional": true,
+  "origin": "existing-generated",
+  "createdForThisGuide": false,
+  "selectionReason": "Existing authorized original generated Russian male older bass-baritone; dark velvet resonance, precise diction, unhurried and restrained. No new previews, voice deletion, slot purchase or new-voice creation.",
+  "auditoryReview": "Pending reviewer listening; selected from provider's saved voice description and Russian language label."
+}

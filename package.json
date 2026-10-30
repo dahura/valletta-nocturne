@@ -1,0 +1,39 @@
+{
+  "name": "valletta-nocturne",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <23"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:api": "node scripts/build-bx.mjs && node .bx/local.mjs",
+    "postinstall": "node scripts/build-bx.mjs",
+    "build": "node scripts/build-bx.mjs && tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 127.0.0.1",
+    "audio:design": "python3 scripts/elevenlabs_audio.py design",
+    "audio:save-voice": "python3 scripts/elevenlabs_audio.py save-voice",
+    "audio:generate": "python3 scripts/elevenlabs_audio.py generate",
+    "audio:validate": "python3 scripts/elevenlabs_audio.py validate"
+  },
+  "dependencies": {
+    "@dahura/bx": "^1.1.1",
+    "leaflet": "1.9.4",
+    "lucide-react": "1.65.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tsx": "^4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}

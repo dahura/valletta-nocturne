@@ -1,0 +1,1197 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "distanceMeters": 3655.4,
+    "durationSecondsEstimate": 2924.2,
+    "profile": "foot",
+    "checked": "2026-10-30",
+    "attribution": "© OpenStreetMap contributors",
+    "attributionUrl": "https://www.openstreetmap.org/copyright",
+    "routingUrl": "https://routing.openstreetmap.de/",
+    "note": "Street-network foot routing, not a field survey. Times are estimates; stairs, gated gardens, works and event restrictions may require a detour. Return to City Gate included; terminal approach and indoor walking excluded."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 1,
+        "toStop": 2,
+        "distanceMeters": 121.8,
+        "durationSecondsEstimate": 97.6,
+        "streets": [
+          "Triq ir-Repubblika",
+          "Triq Nofsinhar"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "По Republic Street пройдите внутрь города до руин оперы слева от Парламента."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.50946,
+            35.896356
+          ],
+          [
+            14.509876,
+            35.896622
+          ],
+          [
+            14.510286,
+            35.896844
+          ],
+          [
+            14.51033,
+            35.896794
+          ],
+          [
+            14.510476,
+            35.896627
+          ],
+          [
+            14.510476,
+            35.896627
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 2,
+        "toStop": 3,
+        "distanceMeters": 120.7,
+        "durationSecondsEstimate": 96.3,
+        "streets": [
+          "Triq Nofsinhar",
+          "Misraħ Kastilja"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "По South Street (Triq Nofsinhar), вдоль руин оперы, выйдите на Castille Place."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.510476,
+            35.896627
+          ],
+          [
+            14.51066,
+            35.896417
+          ],
+          [
+            14.510731,
+            35.896327
+          ],
+          [
+            14.510867,
+            35.896119
+          ],
+          [
+            14.510884,
+            35.89605
+          ],
+          [
+            14.510902,
+            35.895974
+          ],
+          [
+            14.510905,
+            35.895958
+          ],
+          [
+            14.510951,
+            35.89594
+          ],
+          [
+            14.511034,
+            35.895846
+          ],
+          [
+            14.511057,
+            35.895821
+          ],
+          [
+            14.511159,
+            35.895715
+          ],
+          [
+            14.511159,
+            35.895715
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 3,
+        "toStop": 4,
+        "distanceMeters": 156.5,
+        "durationSecondsEstimate": 125.2,
+        "streets": [
+          "Misraħ Kastilja"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "С площади сверните на Triq Sant’ Orsla и войдите в Upper Barrakka через основной вход."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.511159,
+            35.895715
+          ],
+          [
+            14.511172,
+            35.895702
+          ],
+          [
+            14.511275,
+            35.895596
+          ],
+          [
+            14.511266,
+            35.895573
+          ],
+          [
+            14.511252,
+            35.895536
+          ],
+          [
+            14.511276,
+            35.89551
+          ],
+          [
+            14.511294,
+            35.895491
+          ],
+          [
+            14.511423,
+            35.895566
+          ],
+          [
+            14.511433,
+            35.895557
+          ],
+          [
+            14.511436,
+            35.895554
+          ],
+          [
+            14.511582,
+            35.89541
+          ],
+          [
+            14.511584,
+            35.895408
+          ],
+          [
+            14.511586,
+            35.895405
+          ],
+          [
+            14.511669,
+            35.8954
+          ],
+          [
+            14.511716,
+            35.895337
+          ],
+          [
+            14.511882,
+            35.895172
+          ],
+          [
+            14.511954,
+            35.895139
+          ],
+          [
+            14.512095,
+            35.895054
+          ],
+          [
+            14.512145,
+            35.895028
+          ],
+          [
+            14.512187,
+            35.89497
+          ],
+          [
+            14.51218,
+            35.894887
+          ],
+          [
+            14.512152,
+            35.894857
+          ],
+          [
+            14.512152,
+            35.894857
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 4,
+        "toStop": 5,
+        "distanceMeters": 386.8,
+        "durationSecondsEstimate": 309.3,
+        "streets": [
+          "Misraħ Kastilja",
+          "Triq il-Merkanti"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "Вернитесь к Castille Place и идите по Merchant Street до перекрёстка с St John Street."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.512152,
+            35.894857
+          ],
+          [
+            14.51218,
+            35.894887
+          ],
+          [
+            14.512187,
+            35.89497
+          ],
+          [
+            14.512145,
+            35.895028
+          ],
+          [
+            14.512095,
+            35.895054
+          ],
+          [
+            14.511954,
+            35.895139
+          ],
+          [
+            14.511882,
+            35.895172
+          ],
+          [
+            14.511716,
+            35.895337
+          ],
+          [
+            14.511669,
+            35.8954
+          ],
+          [
+            14.511586,
+            35.895405
+          ],
+          [
+            14.511584,
+            35.895408
+          ],
+          [
+            14.511582,
+            35.89541
+          ],
+          [
+            14.511436,
+            35.895554
+          ],
+          [
+            14.511433,
+            35.895557
+          ],
+          [
+            14.511423,
+            35.895566
+          ],
+          [
+            14.511294,
+            35.895491
+          ],
+          [
+            14.511276,
+            35.89551
+          ],
+          [
+            14.511252,
+            35.895536
+          ],
+          [
+            14.511266,
+            35.895573
+          ],
+          [
+            14.511275,
+            35.895596
+          ],
+          [
+            14.511172,
+            35.895702
+          ],
+          [
+            14.511057,
+            35.895821
+          ],
+          [
+            14.511034,
+            35.895846
+          ],
+          [
+            14.510951,
+            35.89594
+          ],
+          [
+            14.510905,
+            35.895958
+          ],
+          [
+            14.510902,
+            35.895974
+          ],
+          [
+            14.511726,
+            35.896506
+          ],
+          [
+            14.512583,
+            35.897037
+          ],
+          [
+            14.512583,
+            35.897037
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 5,
+        "toStop": 6,
+        "distanceMeters": 111.2,
+        "durationSecondsEstimate": 89,
+        "streets": [
+          "Triq San Ġwann",
+          "Misraħ San Ġwann"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "По St John Street поднимитесь к площади перед собором; туристический вход уточните по указателям на месте."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.51258,
+            35.89704
+          ],
+          [
+            14.51255,
+            35.897075
+          ],
+          [
+            14.51251,
+            35.897051
+          ],
+          [
+            14.512316,
+            35.897269
+          ],
+          [
+            14.512109,
+            35.897141
+          ],
+          [
+            14.512018,
+            35.897247
+          ],
+          [
+            14.51202,
+            35.897267
+          ],
+          [
+            14.512008,
+            35.897284
+          ],
+          [
+            14.511923,
+            35.897376
+          ],
+          [
+            14.512075,
+            35.897468
+          ],
+          [
+            14.512075,
+            35.897468
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 6,
+        "toStop": 7,
+        "distanceMeters": 193.4,
+        "durationSecondsEstimate": 154.8,
+        "streets": [
+          "Misraħ San Ġwann",
+          "Misraħ ir-Repubblika"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "Выйдите на Republic Street и идите к Republic Square, ориентир — Caffè Cordina и Национальная библиотека."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.512075,
+            35.897468
+          ],
+          [
+            14.512125,
+            35.897498
+          ],
+          [
+            14.511894,
+            35.897766
+          ],
+          [
+            14.511904,
+            35.897774
+          ],
+          [
+            14.512019,
+            35.897864
+          ],
+          [
+            14.512201,
+            35.89798
+          ],
+          [
+            14.512219,
+            35.897965
+          ],
+          [
+            14.512601,
+            35.898211
+          ],
+          [
+            14.512644,
+            35.898237
+          ],
+          [
+            14.512671,
+            35.898253
+          ],
+          [
+            14.513017,
+            35.898486
+          ],
+          [
+            14.51314,
+            35.898564
+          ],
+          [
+            14.513193,
+            35.898598
+          ],
+          [
+            14.513193,
+            35.898598
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 7,
+        "toStop": 8,
+        "distanceMeters": 67.7,
+        "durationSecondsEstimate": 54.2,
+        "streets": [
+          "Misraħ ir-Repubblika",
+          "Triq tat-Teatru l-Antik",
+          "Triq ir-Repubblika"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "Продолжайте по Republic Street до St George’s Square перед Дворцом великого магистра."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.513193,
+            35.898598
+          ],
+          [
+            14.51334,
+            35.89869
+          ],
+          [
+            14.513375,
+            35.898713
+          ],
+          [
+            14.513341,
+            35.898747
+          ],
+          [
+            14.513305,
+            35.898784
+          ],
+          [
+            14.51332,
+            35.898801
+          ],
+          [
+            14.513439,
+            35.898873
+          ],
+          [
+            14.513458,
+            35.898856
+          ],
+          [
+            14.51362,
+            35.898958
+          ],
+          [
+            14.51362,
+            35.898958
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 8,
+        "toStop": 9,
+        "distanceMeters": 196.1,
+        "durationSecondsEstimate": 156.9,
+        "streets": [
+          "Triq ir-Repubblika",
+          "Triq l-Arċisqof",
+          "Triq id-Dejqa"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "По Republic Street идите до Archbishop Street; по ней сверните на Strait Street и идите до пересечения со St Christopher Street."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.51362,
+            35.898958
+          ],
+          [
+            14.513824,
+            35.899085
+          ],
+          [
+            14.514058,
+            35.899224
+          ],
+          [
+            14.514086,
+            35.899199
+          ],
+          [
+            14.514108,
+            35.899216
+          ],
+          [
+            14.513859,
+            35.899497
+          ],
+          [
+            14.513705,
+            35.899647
+          ],
+          [
+            14.514412,
+            35.900084
+          ],
+          [
+            14.514412,
+            35.900084
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 9,
+        "toStop": 10,
+        "distanceMeters": 235.8,
+        "durationSecondsEstimate": 188.6,
+        "streets": [
+          "Triq id-Dejqa",
+          "Triq tat-Teatru l-Antik"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "Идите по Strait Street до Old Theatre Street, затем поверните направо к главному входу Teatru Manoel."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.514412,
+            35.900084
+          ],
+          [
+            14.513705,
+            35.899647
+          ],
+          [
+            14.512937,
+            35.899181
+          ],
+          [
+            14.512622,
+            35.899525
+          ],
+          [
+            14.512474,
+            35.899677
+          ],
+          [
+            14.512474,
+            35.899677
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 10,
+        "toStop": 11,
+        "distanceMeters": 733.9,
+        "durationSecondsEstimate": 587.2,
+        "streets": [
+          "Triq tat-Teatru l-Antik",
+          "Triq id-Dejqa",
+          "Triq San Ġużepp",
+          "Triq San Nikola",
+          "Triq ir-Repubblika",
+          "Triq l-Isptar",
+          "Triq il-Beatu Nazju Falzon",
+          "Triq il-Mediterran"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "По Old Theatre Street вернитесь на Strait Street; далее через St Joseph Street и St Nicholas Street выйдите на Republic Street, затем через Hospital Street и Blessed Nazju Falzon Street к Mediterranean Street и входу Fort St Elmo. Следуйте линии карты."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.512474,
+            35.899677
+          ],
+          [
+            14.512622,
+            35.899525
+          ],
+          [
+            14.512937,
+            35.899181
+          ],
+          [
+            14.513705,
+            35.899647
+          ],
+          [
+            14.514412,
+            35.900084
+          ],
+          [
+            14.514954,
+            35.900435
+          ],
+          [
+            14.51523,
+            35.900607
+          ],
+          [
+            14.515407,
+            35.900484
+          ],
+          [
+            14.5156,
+            35.900603
+          ],
+          [
+            14.515812,
+            35.900389
+          ],
+          [
+            14.515883,
+            35.900317
+          ],
+          [
+            14.516338,
+            35.900598
+          ],
+          [
+            14.517059,
+            35.899855
+          ],
+          [
+            14.517225,
+            35.8997
+          ],
+          [
+            14.517665,
+            35.89996
+          ],
+          [
+            14.517727,
+            35.899993
+          ],
+          [
+            14.518452,
+            35.899859
+          ],
+          [
+            14.518467,
+            35.899897
+          ],
+          [
+            14.518506,
+            35.900005
+          ],
+          [
+            14.518512,
+            35.900016
+          ],
+          [
+            14.518512,
+            35.900016
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 11,
+        "toStop": 12,
+        "distanceMeters": 101.7,
+        "durationSecondsEstimate": 81.4,
+        "streets": [
+          "Triq il-Mediterran"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "По Mediterranean Street спуститесь вдоль внешней стороны форта к Mediterranean Conference Centre."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.518512,
+            35.900016
+          ],
+          [
+            14.518506,
+            35.900005
+          ],
+          [
+            14.518467,
+            35.899897
+          ],
+          [
+            14.518452,
+            35.899859
+          ],
+          [
+            14.518419,
+            35.899778
+          ],
+          [
+            14.518383,
+            35.899684
+          ],
+          [
+            14.518218,
+            35.899132
+          ],
+          [
+            14.518218,
+            35.899132
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 12,
+        "toStop": 13,
+        "distanceMeters": 291.4,
+        "durationSecondsEstimate": 233.2,
+        "streets": [
+          "Triq il-Mediterran"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "Продолжайте по Mediterranean Street к Lower Barrakka; спуск к Siege Bell отдельный и может быть закрыт."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.518218,
+            35.899132
+          ],
+          [
+            14.518193,
+            35.899048
+          ],
+          [
+            14.517969,
+            35.898354
+          ],
+          [
+            14.517948,
+            35.898287
+          ],
+          [
+            14.517935,
+            35.898199
+          ],
+          [
+            14.517937,
+            35.898111
+          ],
+          [
+            14.517838,
+            35.89809
+          ],
+          [
+            14.517453,
+            35.89782
+          ],
+          [
+            14.51703,
+            35.897555
+          ],
+          [
+            14.517094,
+            35.897489
+          ],
+          [
+            14.517177,
+            35.897472
+          ],
+          [
+            14.517263,
+            35.897447
+          ],
+          [
+            14.517275,
+            35.897463
+          ],
+          [
+            14.517293,
+            35.897475
+          ],
+          [
+            14.517315,
+            35.897482
+          ],
+          [
+            14.517343,
+            35.897483
+          ],
+          [
+            14.51737,
+            35.897475
+          ],
+          [
+            14.51739,
+            35.897459
+          ],
+          [
+            14.517403,
+            35.897438
+          ],
+          [
+            14.517486,
+            35.897442
+          ],
+          [
+            14.517502,
+            35.897409
+          ],
+          [
+            14.517618,
+            35.897437
+          ],
+          [
+            14.517656,
+            35.89745
+          ],
+          [
+            14.517645,
+            35.897481
+          ],
+          [
+            14.517645,
+            35.897481
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "walk",
+        "fromStop": 13,
+        "toStop": 1,
+        "distanceMeters": 938.4,
+        "durationSecondsEstimate": 750.5,
+        "streets": [
+          "Triq il-Mediterran",
+          "Triq Sant' Ursola",
+          "Triq San Ġwann",
+          "Triq ir-Repubblika"
+        ],
+        "profile": "foot",
+        "source": "FOSSGIS routing.openstreetmap.de/routed-foot",
+        "checked": "2026-10-30",
+        "instructions": "Выйдите к Mediterranean Street, затем идите на запад по St Ursula Street. По St John Street поднимитесь к Republic Street и поверните к City Gate. От ворот до автобусного терминала ещё около 5 минут; весь возврат — примерно 20 минут."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.517645,
+            35.897481
+          ],
+          [
+            14.517656,
+            35.89745
+          ],
+          [
+            14.517618,
+            35.897437
+          ],
+          [
+            14.517502,
+            35.897409
+          ],
+          [
+            14.517486,
+            35.897442
+          ],
+          [
+            14.517403,
+            35.897438
+          ],
+          [
+            14.51739,
+            35.897459
+          ],
+          [
+            14.51737,
+            35.897475
+          ],
+          [
+            14.517343,
+            35.897483
+          ],
+          [
+            14.517315,
+            35.897482
+          ],
+          [
+            14.517293,
+            35.897475
+          ],
+          [
+            14.517275,
+            35.897463
+          ],
+          [
+            14.517263,
+            35.897447
+          ],
+          [
+            14.517177,
+            35.897472
+          ],
+          [
+            14.517094,
+            35.897489
+          ],
+          [
+            14.51703,
+            35.897555
+          ],
+          [
+            14.516938,
+            35.897485
+          ],
+          [
+            14.516785,
+            35.897416
+          ],
+          [
+            14.516622,
+            35.897374
+          ],
+          [
+            14.516496,
+            35.89736
+          ],
+          [
+            14.516011,
+            35.897202
+          ],
+          [
+            14.515518,
+            35.89709
+          ],
+          [
+            14.515273,
+            35.896977
+          ],
+          [
+            14.515091,
+            35.896886
+          ],
+          [
+            14.514588,
+            35.896665
+          ],
+          [
+            14.514552,
+            35.896667
+          ],
+          [
+            14.514226,
+            35.896518
+          ],
+          [
+            14.513632,
+            35.896199
+          ],
+          [
+            14.513581,
+            35.896168
+          ],
+          [
+            14.513441,
+            35.896259
+          ],
+          [
+            14.513393,
+            35.896227
+          ],
+          [
+            14.51335,
+            35.896245
+          ],
+          [
+            14.513013,
+            35.896584
+          ],
+          [
+            14.512583,
+            35.897037
+          ],
+          [
+            14.51255,
+            35.897075
+          ],
+          [
+            14.512251,
+            35.897407
+          ],
+          [
+            14.511904,
+            35.897774
+          ],
+          [
+            14.511874,
+            35.897807
+          ],
+          [
+            14.511855,
+            35.897799
+          ],
+          [
+            14.511525,
+            35.89759
+          ],
+          [
+            14.510983,
+            35.897259
+          ],
+          [
+            14.510286,
+            35.896844
+          ],
+          [
+            14.509876,
+            35.896622
+          ],
+          [
+            14.50946,
+            35.896356
+          ],
+          [
+            14.50946,
+            35.896356
+          ]
+        ]
+      }
+    }
+  ]
+}

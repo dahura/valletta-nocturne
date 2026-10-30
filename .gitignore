@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.bx/
+.vercel/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.tsbuildinfo
+*.log
+__pycache__/
+.venv/
+.playwright-cli/
+test-results/
+playwright-report/
+
+.vercel

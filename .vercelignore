@@ -1,0 +1,6 @@
+.git
+.handoff
+node_modules
+README.md
+*.log
+.env*
