@@ -7,10 +7,10 @@
   "designModel": null,
   "voiceOrigin": "existing-generated",
   "createdForThisGuide": false,
-  "generatedAt": "2026-10-30T11:01:32.227402+00:00",
+  "generatedAt": "2026-10-30T11:31:42.937991+00:00",
   "complete": true,
-  "sourceGuideSha256": "006a9d3815cf001d23ddd0ed776907823cf66dfd91e98d83c1c349362f8dc474",
-  "sourceNarrationSha256": "c6acde02c8d93bf5fe344dbbc6d01e07373e27f73db9bb541d570df366d17b9e",
+  "sourceGuideSha256": "4b89e3b3cb7bc97f40884cefc60c5e6b2c27c2c3d0ea7fb888431ae217469d36",
+  "sourceNarrationSha256": "d4524f295cf898a95be01eb6763ef4ce21e9c081b4b38101edc3dadbe2f13fa2",
   "tracks": [
     {
       "id": 1,
@@ -76,13 +76,13 @@
       "id": 6,
       "title": "Собор Святого Иоанна",
       "src": "/audio/06-st-john.mp3",
-      "duration": 64.83,
-      "bytes": 1038253,
-      "narrationSha256": "a0eff1f77e5b7152fcfd19d9ae78eba82403bd6271b2a45a90736a23ccf6e3e2",
-      "audioSha256": "c7113ba3e6573c124aed80d8eba0829d741515f5c46375004bfed0625545aab0",
-      "characters": 787,
+      "duration": 65.62,
+      "bytes": 1050792,
+      "narrationSha256": "4ad2ce833a4c4ffe4b106050f4b50f7bbfdf4921ff44d78438348c60f4985f55",
+      "audioSha256": "d4cf6118e010625bdca0be41d51e39d9df76c83e35fd3bdf6ca1e7c001b21c96",
+      "characters": 790,
       "model": "eleven_multilingual_v2",
-      "generatedAt": "2026-10-30T11:01:04.854258+00:00"
+      "generatedAt": "2026-10-30T11:31:42.902903+00:00"
     },
     {
       "id": 7,
