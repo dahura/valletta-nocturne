@@ -2,6 +2,17 @@
 
 Current as of 11:23 UTC. Earlier bootstrap/voice-capacity notes are superseded by this state.
 
+## Published at11:24UTC
+
+- Reviewed release candidate commit pushed to main: f0dd253780fe0a89780711344b9237c3571ac9c2.
+- GitHub Release: https://github.com/dahura/valletta-nocturne/releases/tag/v1.0.0 . Both assets uploaded, release public and not draft.
+- PDF: https://github.com/dahura/valletta-nocturne/releases/download/v1.0.0/valletta-audioguide-ru.pdf . 5,231,824bytes; SHA256027703dd19e5d1288f3323f7753e6b742f6c6c48ca95ed07a6729bd05f79a8bc.
+- Audio ZIP: https://github.com/dahura/valletta-nocturne/releases/download/v1.0.0/valletta-audio-ru.zip . 13,003,371bytes; SHA256c0f769e1647129c1c8891266b383659d789be317d40e287ac77238383acf3845. Exact13finalMP3s plus Russian README/voice attribution; no QA/private files.
+- Fresh device auth completed. Account dahura and allowed team dahuras-projects rechecked; a single ordinary retry succeeded. Vercel automatically assigned the first deployment to production, without a separate promotion.
+- Actual returned production alias: https://valletta-nocturne.vercel.app . Immutable deployment: https://valletta-nocturne-b56yw4cid-dahuras-projects.vercel.app . CLI Ready54s/exit0. Independent public runtime/browser checks pending at this handoff update.
+- Deployment log: /Volumes/Lexar 4TB/artifacts/runs/valletta-nocturne/vercel-preview-fresh-auth/20261030T112333Z-4da5611f/console.log . Function builder printed nonfatal TS2688 type-definition warnings after the actual full application build passed; validate deployed runtime rather than infer failure from these warnings.
+- Git integration auto-deploy is not connected/proved; deployment used the authorized scoped CLI flow. No Cloudflare deployment performed by this worker.
+
 ## Ready
 
 - Public GitHub repository created: https://github.com/dahura/valletta-nocturne . Local branch main, origin configured. Independent full-build/core/media review passed; release candidate commit/push and v1.0.0 PDF/audio release authorized and in progress.
