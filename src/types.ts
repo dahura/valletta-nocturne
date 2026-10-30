@@ -19,6 +19,8 @@ export interface Stop {
   subtitle: string
   lat: number
   lng: number
+  address?: string
+  taxiDestination?: { name: string; address: string; lat: number; lng: number; note: string }
   sections: { what: string; history: string; look: string; legend?: string }
   narration: string
   image: GuideImage

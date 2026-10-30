@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "address": "City Gate / Parliament House, Republic Street (Triq ir-Repubblika), Valletta, Malta",
+    "sourceUrls": ["https://www.openstreetmap.org/relation/21084402", "https://www.openstreetmap.org/way/24413565"],
+    "taxiDestination": {
+      "name": "Triton Fountain",
+      "address": "Triton Fountain, Vjal Nelson, Floriana, Malta",
+      "lat": 35.8956128,
+      "lng": 14.5082709,
+      "note": "Ориентир — фонтан Тритонов у Городских ворот. Площадь пешеходная; проверьте доступную точку высадки в Bolt и пройдите до ворот пешком.",
+      "sourceUrl": "https://www.openstreetmap.org/way/561356942"
+    }
+  },
+  {
+    "id": 2,
+    "address": "Pjazza Teatru Rjal (Royal Opera House), Republic Street, Valletta, Malta",
+    "sourceUrls": ["https://www.openstreetmap.org/way/55064405", "https://www.openstreetmap.org/way/24413565"]
+  },
+  {
+    "id": 3,
+    "address": "Auberge de Castille, Castille Place (Misraħ Kastilja), Valletta, Malta",
+    "sourceUrls": ["https://primeminister.gov.mt/office-of-the-prime-minister-2/", "https://ghrc.gov.mt/portfolio/castille-square/", "https://www.openstreetmap.org/way/606084724"]
+  },
+  {
+    "id": 4,
+    "address": "Upper Barrakka Gardens, Castille Street (Triq Kastilja), Valletta, Malta",
+    "sourceUrls": ["https://scienceinthecity.org.mt/getting-there/", "https://www.openstreetmap.org/way/983293663", "https://www.openstreetmap.org/relation/19656097"]
+  },
+  {
+    "id": 5,
+    "address": "Merchants Street (Triq il-Merkanti), Valletta, Malta",
+    "sourceUrls": ["https://www.openstreetmap.org/way/534789053"]
+  },
+  {
+    "id": 6,
+    "address": "St John's Co-Cathedral, St John Street (Triq San Ġwann), Valletta, Malta",
+    "sourceUrls": ["https://www.openstreetmap.org/way/23352829", "https://www.openstreetmap.org/way/31232944", "https://www.openstreetmap.org/way/255848300"]
+  },
+  {
+    "id": 7,
+    "address": "Republic Street (Triq ir-Repubblika), near Republic Square, Valletta, Malta",
+    "sourceUrls": ["https://www.openstreetmap.org/way/31232942", "https://www.openstreetmap.org/way/981324813"]
+  },
+  {
+    "id": 8,
+    "address": "Grand Master's Palace, St George's Square, Valletta, Malta",
+    "sourceUrls": ["https://heritagemalta.mt/explore/grand-masters-palace/"]
+  },
+  {
+    "id": 9,
+    "address": "Strait Street (Triq id-Dejqa), Valletta, Malta",
+    "sourceUrls": ["https://www.openstreetmap.org/way/244254698"]
+  },
+  {
+    "id": 10,
+    "address": "Teatru Manoel, Old Theatre Street, Valletta, Malta",
+    "sourceUrls": ["https://teatrumanoel.mt/about-us/", "https://www.openstreetmap.org/way/33458937"]
+  },
+  {
+    "id": 11,
+    "address": "Fort St Elmo and National War Museum, Mediterranean Street (Triq il-Mediterran), Valletta, Malta",
+    "sourceUrls": ["https://heritagemalta.mt/explore/fort-st-elmo-national-war-museum/", "https://www.openstreetmap.org/way/42714313"]
+  },
+  {
+    "id": 12,
+    "address": "Mediterranean Conference Centre (Sacra Infermeria), Old Hospital Street (Triq l-Isptar), Valletta, Malta",
+    "sourceUrls": ["https://mcc.com.mt/contact-us/", "https://www.openstreetmap.org/way/516198708"]
+  },
+  {
+    "id": 13,
+    "address": "Lower Barrakka Gardens / Siege Bell Memorial, Mediterranean Street (Triq il-Mediterran), Valletta, Malta",
+    "sourceUrls": ["https://www.openstreetmap.org/way/27462446", "https://www.openstreetmap.org/way/22778642"]
+  }
+]

@@ -1,14 +1,15 @@
 import { Component, Suspense, lazy, useCallback, useEffect, useRef, useState } from 'react'
 import type { ErrorInfo, ReactNode } from 'react'
-import { Check as CheckIcon, ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, Clock3, Download, Footprints, Headphones, Info, Map as MapIcon, MapPin, Play, RefreshCw, Sun } from 'lucide-react'
+import { Check as CheckIcon, ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, Clock3, Download, Footprints, Headphones, Info, Map as MapIcon, Play, RefreshCw, Sun } from 'lucide-react'
 import { BottomNav, DownLink, Eyebrow, Footer, Header, MalteseMark, PdfLink, Photo, PracticalStatus, StopRows } from './components'
 import Player from './Player'
 import { usePersonalRoute } from './personal-route'
 import type { PersonalRoute } from './personal-route'
 import { RouteEditor } from './RouteEditor'
 import { useGuide } from './features/guide/useGuide'
+import { StopNavigation } from './StopNavigation'
 import type { AudioManifest, Guide, Page, Stop } from './types'
-import { directionsUrl, mapHref, pad, parseManifest, placeUrl, readPage, stopHref, timeLabel } from './types'
+import { directionsUrl, pad, parseManifest, placeUrl, readPage, stopHref, timeLabel } from './types'
 
 const MapView = lazy(() => import('./MapView'))
 const PhotoGuide = import.meta.env.VITE_PHOTO_GUIDE_ENABLED === 'true'
@@ -93,6 +94,7 @@ function Home({ guide, manifest, pdfReady, personal }: { guide: Guide; manifest:
         <div className="hero-description"><p>Прогулка по городу рыцарей.<br />За медовыми фасадами — следы осад, тени Караваджо и истории, которые стоит услышать вдвоём.</p><div className="walk-facts"><span><Headphones />{guide.stops.length} историй</span><span><Clock3 />{guide.duration.split(' с ')[0]}</span><span><Footprints />{guide.distance.split(' по ')[0]}</span></div></div>
       </div>
       <div className="hero-actions"><div className="button-group"><a className="button button-primary" href={stopHref(start)}>{personal.state.recentStop ? "Продолжить прогулку" : "Начать прогулку"}<ArrowUpRight size={18} aria-hidden="true" /></a><PdfLink ready={pdfReady} /></div><p>Начало: City Gate <span>· от автобусов 41 / 42</span></p></div>
+      <details className="start-taxi"><summary>На такси к началу<ArrowUpRight size={17} aria-hidden="true" /></summary><StopNavigation stop={guide.stops[0]} taxiOnly /></details>
       <Photo image={hero.image} className="hero-photo" eager />
       <div className="hero-caption"><div><span className="large-range">01—{guide.stops.length}</span><p>От городских ворот к морю.<br />И обратно — сквозь четыре века.</p></div><DownLink href="#route">Мой маршрут · {personal.selected.length} точек</DownLink></div>
     </section>
@@ -121,7 +123,8 @@ function StopPage({ stop, guide, manifest, onListen, personal }: { stop: Stop; g
     <article className="stop-article" key={stop.id}>
       <div className="stop-breadcrumb"><a href="#route"><ArrowLeft size={16} aria-hidden="true" />Все остановки</a><span>{pad(stop.id)} / {guide.stops.length}</span></div>
       <Photo image={stop.image} className="stop-photo" eager />
-      <header className="stop-heading"><Eyebrow>ОСТАНОВКА {pad(stop.id)}</Eyebrow><h1>{stop.title}</h1><p className="stop-subtitle">{stop.subtitle}</p><button className="visited-button story-visited" aria-pressed={personal.state.visited.includes(stop.id)} onClick={() => personal.toggleVisited(stop.id)}><CheckIcon />Уже были</button><div className="stop-actions"><button className="button button-primary" disabled={!track} onClick={() => onListen(stop)}><Play size={16} fill="currentColor" aria-hidden="true" />{track ? `Слушать · ${timeLabel(track.duration)}` : stop.custom ? 'Нет записанного аудио' : 'Аудио недоступно'}</button><a className="button button-outline" href={mapHref(stop)}><MapPin size={17} aria-hidden="true" />На карте</a>{track && <a className="text-link stop-download" href={track.src} download><Download size={16} aria-hidden="true" />MP3</a>}</div></header>
+      <header className="stop-heading"><Eyebrow>ОСТАНОВКА {pad(stop.id)}</Eyebrow><h1>{stop.title}</h1><p className="stop-subtitle">{stop.subtitle}</p><button className="visited-button story-visited" aria-pressed={personal.state.visited.includes(stop.id)} onClick={() => personal.toggleVisited(stop.id)}><CheckIcon />Уже были</button><div className="stop-actions"><button className="button button-primary" disabled={!track} onClick={() => onListen(stop)}><Play size={16} fill="currentColor" aria-hidden="true" />{track ? `Слушать · ${timeLabel(track.duration)}` : stop.custom ? 'Нет записанного аудио' : 'Аудио недоступно'}</button>{track && <a className="text-link stop-download" href={track.src} download><Download size={16} aria-hidden="true" />MP3</a>}</div></header>
+      <StopNavigation stop={stop} />
       <div className="story-sections">{(Object.entries(sectionLabels) as [keyof typeof sectionLabels, string][]).map(([key, title]) => stop.sections[key] ? <section key={key} className={key === 'legend' ? 'legend-section' : ''}><h2>{title}</h2>{stop.sections[key]!.split('\n').filter(Boolean).map((text, i) => <p key={i}>{text}</p>)}</section> : null)}</div>
       <details className="source-details"><summary>Источники этой истории<ChevronDown size={17} aria-hidden="true" /></summary><ul>{stop.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label}<ArrowUpRight size={14} aria-hidden="true" /></a></li>)}</ul><p>Фотография: <a href={stop.image.sourceUrl} target="_blank" rel="noreferrer">{stop.image.author} · {stop.image.license}</a>. Для отображения фотография кадрирована.</p></details>
       <section className="next-walk"><div className="next-walk-heading"><Footprints size={23} aria-hidden="true" /><Eyebrow>{next ? 'ДАЛЬШЕ ПЕШКОМ' : 'ВОЗВРАЩЕНИЕ К CITY GATE'}{!personal.changed && ` · ≈ ${stop.walkMinutes} МИН`}</Eyebrow></div><p>{personal.changed ? next ? `Далее — ${next.title}. Порядок изменён вами. Откройте пеший путь в OpenStreetMap и сверяйтесь с обстановкой на месте.` : "Ваш маршрут завершён. Обратный путь к City Gate можно открыть в OpenStreetMap." : stop.nextDirections}</p><a className="text-link" href={directionsUrl(stop, next || guide.stops[0])} target="_blank" rel="noreferrer">Путь в OpenStreetMap<ArrowUpRight size={16} aria-hidden="true" /></a>{next ? <a className="next-stop-link" href={stopHref(next)}><span><small>СЛЕДУЮЩАЯ ИСТОРИЯ · {pad(next.id)}</small><strong>{next.title}</strong></span><ArrowRight size={25} aria-hidden="true" /></a> : <a className="next-stop-link" href="#practical"><span><small>ПОСЛЕ ПРОГУЛКИ</small><strong>Кофе и обратный автобус</strong></span><ArrowRight size={25} aria-hidden="true" /></a>}</section>

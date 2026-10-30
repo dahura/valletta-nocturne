@@ -25,6 +25,11 @@ export function requireAuthorGuide(value: unknown): Guide {
       if (!text(stop.slug) || slugs.has(stop.slug) || !['title', 'subtitle', 'narration', 'nextDirections'].every(key => text(stop[key]))) return false
       if (!finite(stop.lat) || Math.abs(stop.lat) > 90 || !finite(stop.lng) || Math.abs(stop.lng) > 180 || !finite(stop.walkMinutes) || stop.walkMinutes < 0) return false
       const sections = stop.sections
+      if (stop.address !== undefined && !text(stop.address)) return false
+      if (stop.taxiDestination !== undefined) {
+        const taxi = stop.taxiDestination
+        if (!record(taxi) || !['name', 'address', 'note'].every(key => text(taxi[key])) || !finite(taxi.lat) || Math.abs(taxi.lat) > 90 || !finite(taxi.lng) || Math.abs(taxi.lng) > 180) return false
+      }
       if (!record(sections) || !['what', 'history', 'look'].every(key => text(sections[key])) || (sections.legend !== undefined && !text(sections.legend))) return false
       const image = stop.image
       if (!record(image) || !['src', 'alt', 'author', 'license', 'sourceUrl'].every(key => text(image[key])) || !sources(stop.sources)) return false

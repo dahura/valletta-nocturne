@@ -12,6 +12,8 @@ const t = b.t
 const sourceSchema = t.Object({ label: t.String(), url: t.String(), checked: t.Optional(t.String()) })
 const stopSchema = t.Object({
   id: t.Integer(), slug: t.String(), title: t.String(), subtitle: t.String(), lat: t.Number(), lng: t.Number(),
+  address: t.Optional(t.String()),
+  taxiDestination: t.Optional(t.Object({ name: t.String(), address: t.String(), lat: t.Number({ minimum: -90, maximum: 90 }), lng: t.Number({ minimum: -180, maximum: 180 }), note: t.String() })),
   sections: t.Object({ what: t.String(), history: t.String(), look: t.String(), legend: t.Optional(t.String()) }),
   narration: t.String(), image: t.Object({ src: t.String(), alt: t.String(), author: t.String(), license: t.String(), sourceUrl: t.String() }),
   sources: t.Array(sourceSchema), nextDirections: t.String(), walkMinutes: t.Number(),

@@ -39,10 +39,33 @@
         {
           "label": "Renzo Piano Building Workshop: City Gate, Parliament and theatre",
           "url": "https://www.rpbw.com/project/la-vallete-city-gate"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://www.openstreetmap.org/relation/21084402",
+          "checked": "2026-10-30"
+        },
+        {
+          "label": "Фонтан Тритонов: ориентир у начала прогулки",
+          "url": "https://scienceinthecity.org.mt/getting-there/",
+          "checked": "2026-10-30"
+        },
+        {
+          "label": "Фонтан Тритонов: ориентир у начала прогулки",
+          "url": "https://www.openstreetmap.org/way/561356942",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "По Republic Street пройдите внутрь города до руин оперы слева от Парламента.",
-      "walkMinutes": 2
+      "walkMinutes": 2,
+      "address": "City Gate / Parliament House, Republic Street (Triq ir-Repubblika), Valletta, Malta",
+      "taxiDestination": {
+        "name": "Triton Fountain",
+        "address": "Vjal Nelson, Floriana, Malta",
+        "lat": 35.8956128,
+        "lng": 14.5082709,
+        "note": "Ориентир — фонтан Тритонов у Городских ворот. Площадь пешеходная; проверьте доступную точку высадки в Bolt и пройдите до ворот пешком."
+      }
     },
     {
       "id": 2,
@@ -72,10 +95,16 @@
         {
           "label": "Renzo Piano Building Workshop: City Gate, Parliament and theatre",
           "url": "https://www.rpbw.com/project/la-vallete-city-gate"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://www.openstreetmap.org/way/24413565",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "По South Street (Triq Nofsinhar), вдоль руин оперы, выйдите на Castille Place.",
-      "walkMinutes": 2
+      "walkMinutes": 2,
+      "address": "Pjazza Teatru Rjal (Royal Opera House), Republic Street, Valletta, Malta"
     },
     {
       "id": 3,
@@ -101,10 +130,16 @@
         {
           "label": "Public Service Malta: Auberge de Castille",
           "url": "https://publicservice.gov.mt/en/news/public-services-from-historical-places-auberge-de-castille"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://ghrc.gov.mt/portfolio/castille-square/",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "С площади сверните на Triq Sant’ Orsla и войдите в Upper Barrakka через основной вход.",
-      "walkMinutes": 3
+      "walkMinutes": 3,
+      "address": "Auberge de Castille, Castille Place (Misraħ Kastilja), Valletta, Malta"
     },
     {
       "id": 4,
@@ -134,10 +169,16 @@
         {
           "label": "Saluting Battery: published hours, time-gun and prices",
           "url": "https://www.salutingbattery.com/"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://scienceinthecity.org.mt/getting-there/",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "Вернитесь к Castille Place и идите по Merchant Street до перекрёстка с St John Street.",
-      "walkMinutes": 6
+      "walkMinutes": 6,
+      "address": "Upper Barrakka Gardens, Castille Street (Triq Kastilja), Valletta, Malta"
     },
     {
       "id": 5,
@@ -167,10 +208,16 @@
         {
           "label": "Is-Suq tal-Belt: operator and opening hours",
           "url": "https://issuqtalbelt.com/"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://www.openstreetmap.org/way/534789053",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "По St John Street поднимитесь к площади перед собором; туристический вход уточните по указателям на месте.",
-      "walkMinutes": 2
+      "walkMinutes": 2,
+      "address": "Merchants Street (Triq il-Merkanti), Valletta, Malta"
     },
     {
       "id": 6,
@@ -204,10 +251,16 @@
         {
           "label": "UNESCO: City of Valletta",
           "url": "https://whc.unesco.org/en/list/131/"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://www.openstreetmap.org/way/23352829",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "Выйдите на Republic Street и идите к Republic Square, ориентир — Caffè Cordina и Национальная библиотека.",
-      "walkMinutes": 3
+      "walkMinutes": 3,
+      "address": "St John's Co-Cathedral, St John Street (Triq San Ġwann), Valletta, Malta"
     },
     {
       "id": 7,
@@ -237,10 +290,16 @@
         {
           "label": "Caffè Cordina: official contact and opening hours",
           "url": "https://caffecordina.com.mt/contact/"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://www.openstreetmap.org/way/31232942",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "Продолжайте по Republic Street до St George’s Square перед Дворцом великого магистра.",
-      "walkMinutes": 2
+      "walkMinutes": 2,
+      "address": "Republic Street (Triq ir-Repubblika), near Republic Square, Valletta, Malta"
     },
     {
       "id": 8,
@@ -269,7 +328,8 @@
         }
       ],
       "nextDirections": "По Republic Street идите до Archbishop Street; по ней сверните на Strait Street и идите до пересечения со St Christopher Street.",
-      "walkMinutes": 4
+      "walkMinutes": 4,
+      "address": "Grand Master's Palace, St George's Square, Valletta, Malta"
     },
     {
       "id": 9,
@@ -295,10 +355,16 @@
         {
           "label": "University of York: Strait Street oral-history research",
           "url": "https://www.york.ac.uk/archaeology/research/current-projects/strait-street/"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://www.openstreetmap.org/way/244254698",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "Идите по Strait Street до Old Theatre Street, затем поверните направо к главному входу Teatru Manoel.",
-      "walkMinutes": 4
+      "walkMinutes": 4,
+      "address": "Strait Street (Triq id-Dejqa), Valletta, Malta"
     },
     {
       "id": 10,
@@ -331,7 +397,8 @@
         }
       ],
       "nextDirections": "По Old Theatre Street вернитесь на Strait Street; далее через St Joseph Street и St Nicholas Street выйдите на Republic Street, затем через Hospital Street и Blessed Nazju Falzon Street к Mediterranean Street и входу Fort St Elmo. Следуйте линии карты.",
-      "walkMinutes": 12
+      "walkMinutes": 12,
+      "address": "Teatru Manoel, Old Theatre Street, Valletta, Malta"
     },
     {
       "id": 11,
@@ -360,7 +427,8 @@
         }
       ],
       "nextDirections": "По Mediterranean Street спуститесь вдоль внешней стороны форта к Mediterranean Conference Centre.",
-      "walkMinutes": 2
+      "walkMinutes": 2,
+      "address": "Fort St Elmo and National War Museum, Mediterranean Street (Triq il-Mediterran), Valletta, Malta"
     },
     {
       "id": 12,
@@ -386,10 +454,16 @@
         {
           "label": "Mediterranean Conference Centre: history",
           "url": "https://mcc.com.mt/about-us/"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://mcc.com.mt/contact-us/",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "Продолжайте по Mediterranean Street к Lower Barrakka; спуск к Siege Bell отдельный и может быть закрыт.",
-      "walkMinutes": 5
+      "walkMinutes": 5,
+      "address": "Mediterranean Conference Centre (Sacra Infermeria), Old Hospital Street (Triq l-Isptar), Valletta, Malta"
     },
     {
       "id": 13,
@@ -419,10 +493,16 @@
         {
           "label": "Heritage Malta, 21.03.2025: Siege Bell restoration and stopped tolling",
           "url": "https://heritagemalta.mt/news/heritage-malta-entering-new-phase-of-siege-bell-memorial-restoration-with-support-from-the-malta-airport-foundation/"
+        },
+        {
+          "label": "Адрес и ориентир на карте",
+          "url": "https://www.openstreetmap.org/way/22778642",
+          "checked": "2026-10-30"
         }
       ],
       "nextDirections": "Выйдите к Mediterranean Street, затем идите на запад по St Ursula Street. По St John Street поднимитесь к Republic Street и поверните к City Gate. От ворот до автобусного терминала ещё около 5 минут; весь возврат — примерно 20 минут.",
-      "walkMinutes": 15
+      "walkMinutes": 15,
+      "address": "Lower Barrakka Gardens / Siege Bell Memorial, Mediterranean Street (Triq il-Mediterran), Valletta, Malta"
     }
   ],
   "practical": [
