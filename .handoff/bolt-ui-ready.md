@@ -1,6 +1,6 @@
 # Bolt/address UI candidate ready · 2026-10-30 11:54 UTC
 
-Status: independent R4 LOCAL PASS received from parent on2026-10-30; no critical findings. Production publication authorized, commit/push/deploy now proceeding. Fresh R5 public smoke remains pending. Current base HEAD `261db1b` (main). Candidate local UI: http://127.0.0.1:5173/#stop/city-gate . Public URL remains https://valletta-nocturne.vercel.app until approved deployment.
+Status: independent R4 LOCAL PASS received from parent on2026-10-30; no critical findings. Production published and initial author checks complete. Fresh independent R5 public smoke remains pending. Current base HEAD `261db1b` (main). Local UI: http://127.0.0.1:5173/#stop/city-gate . Updated production: https://valletta-nocturne.vercel.app .
 
 ## Product contract and actual changes
 
@@ -32,7 +32,7 @@ All13 narration/sections exact string values, all preexisting stop fields except
 
 ## Limits / verification setup
 
-No official public destination-prefill contract was verified. Bolt uses its current official rider CTA, verified by researcher in first-party JS and app association metadata; no physical installed-app launch or prefilled destination guarantee. No real iOS/Android installed/uninstalled app test or trip booking claimed. Official CTA/web fallback contract established by research. Independent R4 LOCAL PASS received; independent R5 public smoke pending publication.
+No official public destination-prefill contract was verified. Bolt uses its current official rider CTA, verified by researcher in first-party JS and app association metadata; no physical installed-app launch or prefilled destination guarantee. No real iOS/Android installed/uninstalled app test or trip booking claimed. Official CTA/web fallback contract established by research. Independent R4 LOCAL PASS received; independent R5 public smoke pending.
 
 T3 preview snapshots failed twice with exact “Preview automation snapshot timed out after 15000ms.” Following permitted fallback, Playwright CLI used installed Chrome (default bundled Chromium absent). All config/payload/log/screenshot output explicitly on verified Lexar through lexar.py qa; short /tmp/pw-vn is only a runtime socket, not evidence. CLI session `valletta-bolt` is test-only. Browser tests intentionally abort guide/get to exercise current static fallback because the preexisting local dev API has an older in-memory bundle. Browser console net::ERR_FAILED entries are exactly this fixture; no application runtime errors seen. Separately rebuilt BX API checked real HTTP above. Fresh verifier can use fresh Chrome/context or current static local route, and inspect rebuilt API independently. Optional photo/GPS unchanged; no new prompts.
 
@@ -47,3 +47,12 @@ FINAL candidate validation complete: full React/BX/types/Vite build passed with 
 ## Publication gate
 
 Parent explicitly reported independent R4 LOCAL PASS with no critical findings (`.handoff/bolt-verification-r4.md`) and authorized commit/push/main production deployment in dahuras-projects. Frozen8source snapshotSHA256 `97df6dfa55afbb6155a4c4004c6dca450c6f538191a04b962b575919900df34e` rechecked unchanged before commit. No physical-app/prefill claim. Publication result will be recorded below; no docs-only deployment is required.
+
+## Actual publication result · 2026-10-30 12:02 UTC
+
+- Code commit pushed to main: `cb0950b6fa182b9c3a86a574811d2541373e785a`. Only this slice and its research/ready/R4 handoffs included; three preexisting unrelated untracked handoffs preserved.
+- Normal Vercel production deploy, only dahuras-projects: **READY**, CLIexit0, aliased https://valletta-nocturne.vercel.app . Deployment ID `dpl_Ez6xNeVDiEhAa5UFd5yrHcUxLh79`; immutable URL https://valletta-nocturne-9y7a2504l-dahuras-projects.vercel.app . Deployment log `/Volumes/Lexar 4TB/artifacts/runs/valletta-nocturne/bolt-ui-deploy/20261030T120057Z-a8fab17c/console.log`. No second deployment/retry.
+- Remote React/BX/types/Vite build passed. Function transpilation printed nonfatal TS2688 diagnostics for missing node/vite-client type definitions; build still completed/READY. The one follow-up runtime diagnostic verified all3 existing routes: guide/get200 with exact13metadata, photo/confirm200, photo/explain422 for intentionally missing input (no paid model call). No API refactor or blind redeploy.
+- Initial author public HTTP check: root/static200; static guide byte-equal to current source; real BXPOST200/all13addresses, taxi metadata and sections/narration exact; PDFHEAD200application/pdf and MP3HEAD200audio/mpeg. `/Volumes/Lexar 4TB/artifacts/runs/valletta-nocturne/bolt-ui-public/20261030T120200Z-88b76af9/` contains `initial-public-http.json`, actual API responses, console.log.
+- Initial actual public390 browser: guide source `bx`; CityGate address and Triton landmark visible; href exact `https://bolt.sng.link/Epy3j/o5l4/8p88`; real taxi copy exact; photo guide actually rendered enabled; no page errors. `/Volumes/Lexar 4TB/artifacts/runs/valletta-nocturne/bolt-ui-public/20261030T120218Z-a3ba87d9/` contains `initial-public-browser.js`, `public-address-390.png`, console.log. Existing production `VITE_PHOTO_GUIDE_ENABLED=true` preserved; no secrets/env updates.
+- No shared browser sessions closed; no PR/Cloudflare work. Physical iOS/Android Bolt app handoff and destination prefill remain UNVERIFIED. Parent assigns fresh R5 public smoke; implementation's own checks do not establish independent public PASS. This final documentation update does not require a docs-only redeployment.
