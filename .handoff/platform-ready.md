@@ -1,6 +1,14 @@
 # Platform readiness · 30 October 2026
 
-Current as of 11:23 UTC. Earlier bootstrap/voice-capacity notes are superseded by this state.
+Current as of 11:28 UTC. Earlier bootstrap/voice-capacity notes are superseded by this state.
+
+## Live runtime update
+
+- Current public production alias: https://valletta-nocturne.vercel.app . API deployment code commit d51b909070eb1963d69eee063e66f74e503152d9, pushed to main. Current immutable deployment https://valletta-nocturne-u6enc65lb-dahuras-projects.vercel.app . Immutable deployment URL has normal Vercel authentication protection; public alias is accessible without authentication.
+- First deployment's catchall did not route nested BX requests. Replaced only the API wrapper with3 explicit file routes: api/bx/guide/get.ts, api/bx/photo/explain.ts, api/bx/photo/confirm.ts. Real BX handler/client, content and audio unchanged. Narrow-fix full build passed; production deployment Ready26s.
+- Actual public same-origin POST /api/bx/guide/get at11:26:57UTC returned200, application/json, X-BX-Framework1.1.1 and13stops.
+- Actual public photo.explain at11:27:13UTC returned200 in4017ms: Wikimedia CityGate→identifiedID1,3visible features, official RPBW source. Photo flag is explicitly true in production config. Independent overall public review remains parent-owned.
+- Evidence: public-bx-production-alias/20261030T112657Z-ed9adb55 and public-photo-known/20261030T112708Z-2c384c97 under the external evidence root.
 
 ## Published at11:24UTC
 
